@@ -1,0 +1,14 @@
+-> Void
+main = Int [ 1 .. 100 ] >> fizzbuzz
+
+Int -> Str
+fizzbuzz n = if == (rem n 15) 0
+               then "fizzbuzz"
+             else if == (rem n 3) 0
+               then "fizz"
+             else if == (rem n 5) 0
+               then "buzz"
+             else n
+
+Int Int -> Int
+rem a b = - a (* b (/ a b))
